@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+    font-size: 50px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+button {
+    border: 2px outset red;
+    border-radius: 15px;
+    background-color: burlywood;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.btn-cntr {
+    border: 3px inset cornflowerblue;
+    border-radius: 15px;
+    padding: 30px 30px;
+    background: transparent;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.instructions {
+    text-align: center;
+    font-size: 28px;
+}
