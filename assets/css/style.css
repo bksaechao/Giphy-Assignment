@@ -5,14 +5,21 @@ header {
 
 body {
     background-color: aliceblue;
+    background: url(../images/full-bloom.png);
 }
 
 button {
-    border: 2px outset red;
+    border: 2px outset cornsilk;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: slateblue;
     border-radius: 15px;
     background-color: burlywood;
     margin: 0px 10px;
     font-size: 25px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
 }
 
 .btn-cntr {
@@ -24,7 +31,7 @@ button {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto; 
 }
