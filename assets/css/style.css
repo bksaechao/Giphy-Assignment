@@ -1,17 +1,26 @@
 header {
     text-align: center;
     font-size: 50px;
+    color: indianred;
+}
+
+form {
+    float: right;
+    margin-bottom: 20px;
+}
+
+p {
+    color: blueviolet;
 }
 
 body {
-    background-color: aliceblue;
-    background: url(../images/full-bloom.png);
+    background: url(../images/vintage-concrete.png);
 }
 
 button {
     border: 2px outset cornsilk;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: slateblue;
+    color: firebrick;
     border-radius: 15px;
     background-color: burlywood;
     margin: 0px 10px;
@@ -19,15 +28,16 @@ button {
 }
 
 button:hover {
-    background-color: cornflowerblue;
+    background-color: aliceblue;
 }
 
 .btn-cntr {
-    border: 3px inset cornflowerblue;
+    border: 3px ridge bisque;
     border-radius: 15px;
     padding: 30px 30px;
     background: transparent;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .container {
