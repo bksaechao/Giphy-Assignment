@@ -7,10 +7,10 @@ This Giphy Assignment challenges the student's understanding of API's and how to
 -<strong>Giphy API:</strong> https://developers.giphy.com/docs/api/endpoint
 
 # Technologies/Terms Used
--<strong>Heavy Jquery syntax</strong>
--<strong>For Loops</strong>
--<strong>attr.</strong>
--<strong>.append</strong>
--<strong>*this*</strong>
--<strong>Arrays</strong
--<strong>Forms & Inputs</strong
+-<strong>Heavy Jquery syntax</strong><br>
+-<strong>For Loops</strong><br>
+-<strong>attr.</strong><br>
+-<strong>.append</strong><br>
+-<strong>*this*</strong><br>
+-<strong>Arrays</strong><br>
+-<strong>Forms & Inputs</strong><br>
