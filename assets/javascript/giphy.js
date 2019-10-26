@@ -11,13 +11,11 @@ function displayBtn() {
         btn.addClass("new-button");
         btn.text(topics[i]);
         $("#button-list").append(btn);
-        console.log(topics[i])
     }
 }
 
 //Function to add a new topic & button to the DOM
 function addBtn() {
-    $("#submit").text("");
     topics.push($("#topic").val().trim());
     displayBtn();
 }
@@ -32,29 +30,47 @@ function displayGif(name) {
         method: 'GET'
     })
         .then(function (response) {
-            console.log("test", response);
-
             var results = response.data;
             for (var j = 0; j < results.length; j++) {
                 var gifURL = results[j].images.original_still.url
                 var gif = $("<img>");
+                gif.addClass("gif");
                 gif.attr('src', gifURL);
+                gif.attr("height", "200");
+                gif.attr("width", "300");
+                gif.attr("data-still", gifURL);
+                gif.attr("data-animate", results[j].images.original.url)
+                gif.attr("data-status", "still")
                 $("#giphy-list").append(gif);
+                console.log(response);
             }
         });
+}
+
+function animate() {
+    if ($(this).attr("data-status") === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-status", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-status", "still");
+    }
 }
 
 
 $(document).ready(function () {
     displayBtn();
+
     $("#submit").on("click", function () {
         event.preventDefault();
         addBtn();
+        $("#topic").val('')
     });
 
-    // fixes event delegation
     $(document).on("click", ".new-button", function () {
         $("#giphy-list").empty();
         displayGif($(this).text());
-    })
+    });
+
+    $(document).on("click", ".gif", animate);
 });
