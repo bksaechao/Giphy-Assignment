@@ -11,8 +11,8 @@ button {
     border: 2px outset red;
     border-radius: 15px;
     background-color: burlywood;
-    margin-right: 10px;
-    font-size: 30px;
+    margin: 0px 10px;
+    font-size: 25px;
 }
 
 .btn-cntr {
@@ -20,6 +20,7 @@ button {
     border-radius: 15px;
     padding: 30px 30px;
     background: transparent;
+    width: 100%;
 }
 
 .container {
