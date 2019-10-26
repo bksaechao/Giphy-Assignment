@@ -28,6 +28,10 @@ button {
     font-size: 25px;
 }
 
+.gDiv {
+    float:left;
+}
+
 img {
     padding-right: 20px;
     padding-bottom: 20px;
@@ -47,13 +51,18 @@ button:hover {
 }
 
 .gif-cntr {
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .container {
     max-width: 980px;
     margin-left: auto;
     margin-right: auto; 
+}
+
+.rating {
+    color: black;
+    font-weight: bold;
 }
 .instructions {
     text-align: center;
